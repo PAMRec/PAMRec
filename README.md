@@ -1,16 +1,23 @@
-### Hi there 👋
+# PAMRec: Playback duration Augmented Micro-video Recommendation
 
-<!--
-**PAMRec/PAMRec** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is the official implementation of our RecSys'23 paper:  
 
-Here are some ideas to get you started:
+The code is tested under a Linux desktop with TensorFlow 2.4.0 and Python 3.8.6.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Model Training
+
+Use the following command to train a PAMRec model on `WeChat-Channels` dataset: 
+
+```
+python examples/00_quick_start/sequential.py --dataset wechat
+```
+
+or on `MX-TakaTak` dataset:
+
+```
+python examples/00_quick_start/sequential.py --dataset takatak
+``` 
+
+## Note
+
+The implemention is based on *[Microsoft Recommender](https://github.com/microsoft/recommenders)*.
